@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ==============================
+Webfont
+Site Name: Hanasaki Manjiro
+Date: 2018.05
+================================= */
+
+/* Web font
+--------------------------------- */
+@font-face {
+	font-family: "MutsukiNminLdsp";
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/MutsukiNmin-L_DSP.woff2') format('woff2'),
+		url('../fonts/MutsukiNmin-L_DSP.woff') format('woff'),
+		url('../fonts/MutsukiNmin-L_DSP.ttf') format('truetype');
+}
+
+/* iconfont
+--------------------------------- */
+@font-face {
+	font-family: 'iconfont';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/icomoon.woff?c5i5g3') format('woff'),
+		url('../fonts/icomoon.ttf?c5i5g3') format('truetype'),
+		url('../fonts/icomoon.svg?c5i5g3#icomoon') format('svg');
+}
+[class^="ico--"], [class*=" ico--"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'iconfont' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.ico--mark:before {
+	content: "\e900";
+}

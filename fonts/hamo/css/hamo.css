@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+/* ==============================
+hamo PC layout
+Site Name: hanasaki-manjiro;
+Date: 2016.06;
+================================= */
+
+/* Foundation
+================================= */
+/* base
+----------------------------- */
+body {
+	background: url(../img/bg_body.jpg) 0 0 repeat #f6eed9;
+	color: #332219;
+	font: 16px/2.0 "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;/* android */
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* component
+================================= */
+/* title
+----------------------------- */
+h1 {
+	position: absolute;
+	overflow: hidden;
+	height: 0;
+	width: 0;
+}
+
+/* text
+----------------------------- */
+p.txt {
+	margin-bottom: 25px;
+	max-height: 100%;/* android */
+}
+div.txt {
+	margin-bottom: 25px;
+	max-height: 100%;/* android */
+}
+div.txt p {
+	margin-bottom: 25px;
+	max-height: 100%;/* android */
+}
+p.txt:last-child,
+div.txt:last-child,
+div.txt p:last-child {
+	margin-bottom: 0;
+}
+/* strong */
+strong {
+	font-weight: bold;
+}
+em {
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Utitlity
+================================= */
+/* clear */
+.clear {
+	clear: both;
+}
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+/* align */
+.center {
+	text-align: center;
+}
+/* hidden */
+.hdn {
+	display: none !important;
+}
+/* margin */
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt40 { margin-top: 40px; }
+.mt50 { margin-top: 50px; }
+.mt60 { margin-top: 60px; }
+.mt70 { margin-top: 70px; }
+.mt80 { margin-top: 80px; }
+.mt90 { margin-top: 90px; }
+.mt100 { margin-top: 100px; }
+.mt150 { margin-top: 150px; }
+.mt200 { margin-top: 200px; }
+/* inner */
+.inner {
+	clear: both;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+.inner.is-1000 {
+	width: 1000px;
+}
+.inner.is-visible {
+	overflow: visible;
+}
+
+/* Layout
+================================= */
+/* common
+----------------------------- */
+.logo a,
+.site a {
+	transition: opacity .3s;
+}
+.logo a:hover,
+.site a:hover {
+	opacity: .5;
+}
+
+/* header
+----------------------------- */
+#header {
+	background: url(../img/bg_header.png) 0 0 repeat-x;
+	position: absolute;
+	z-index: 11000;
+	width: 100%;
+	height: 111px;
+}
+#header .logo {
+	float: left;
+	margin-top: 19px;
+	margin-right: 20px;
+	width: 275px;
+}
+#header .hamo {
+	float: left;
+	margin-top: 23px;
+	width: 120px;
+}
+#header .tel {
+	float: right;
+	margin-top: 26px;
+	margin-right: 20px;
+	width: 381px;
+}
+#header .site {
+	float: right;
+	margin-top: 23px;
+	width: 150px;
+}
+/* online */
+#online {
+	position: fixed;
+	top: 120px;
+	right: 0;
+	z-index: 10000;
+	width: 60px;
+	height: 160px;
+}
+#online a {
+	background-color: #ac2e1a;
+	box-sizing: border-box;
+	box-shadow: 0 0 20px inset #7b1600;
+	color: white;
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 52px;
+	text-align: center;
+	transition: opacity .5s;
+	writing-mode: vertical-rl;
+	border: 4px solid #ac2e1a;
+	width: 60px;
+	height: 160px;
+}
+#online a:hover {
+	text-decoration: none;
+	opacity: .5;
+}
+
+/* main
+----------------------------- */
+section {
+	clear: both;
+	overflow: hidden;
+}
+/* hero */
+#hero,
+#sliders,
+#slider li {
+	width: 100%;
+	height: 900px;
+}
+#hero {
+	position: relative;
+}
+#hero h2 {
+	position: absolute;
+	top: 200px;
+	right: calc(50% - 500px);
+	z-index: 10000;
+}
+#slider li {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+#slider01 {
+	background: url(../img/photo_hero01.jpg) center center no-repeat;
+}
+#slider02 {
+	background: url(../img/photo_hero02.jpg) center center no-repeat;
+}
+#slider03 {
+	background: url(../img/photo_hero03.jpg) center center no-repeat;
+}
+#slider04 {
+	background: url(../img/photo_hero04_nishiki.jpg) center center no-repeat;
+}
+#slider05 {
+	background: url(../img/photo_hero05_manjiro.jpg) center center no-repeat;
+}
+@media screen and (min-width: 1500px) {
+	#slider li {
+		background-size: cover;
+	}
+}
+/* about */
+#about {
+	background: url(../img/bg_about02.png) center 125px repeat-x,
+		url(../img/bg_about.jpg) left bottom no-repeat,
+		url(../img/bg_white.jpg) center 0 repeat;
+	padding-bottom: 116px;
+}
+#about__lead h2 {
+	float: left;
+	margin-top: 325px;
+	width: 164px;
+}
+#about__lead .txt {
+	float: right;
+	margin-top: 585px;
+	width: 750px;
+}
+#about__link {
+	margin-top: 60px;
+}
+.about__list li {
+	list-style: none;
+	width: 488px;
+}
+.about__list li:first-child {
+	float: left;
+	margin-left: -9px;
+}
+.about__list li:last-child {
+	float: right;
+	margin-right: -9px;
+}
+.about__list li a {
+	transition: opacity .3s;
+}
+.about__list li a:hover {
+	opacity: .5;
+}
+/* hamokaiseki */
+.course::before {
+	background: url(../img/bg_wood.jpg) 0 0 repeat-x;
+	content: "";
+	display: block;
+	height: 125px;
+}
+.course > .inner {
+	background: url(../img/bg_course.jpg) calc(50% - 364px) -10px no-repeat;
+	margin-top: 1px;
+	padding-bottom: 80px;
+}
+.course h2 {
+	float: left;
+	margin-top: 80px;
+	margin-left: 80px;
+	width: 72px;
+}
+.course .txts {
+	float: right;
+	margin-top: 80px;
+	width: 750px;
+}
+.course__menu {
+	padding-bottom: 10px;
+}
+.course__menu dt {
+	line-height: 1.6;
+	max-height: 100%;/* android */
+}
+.course__menu dd {
+	margin-bottom: 30px;
+	max-height: 100%;/* android */
+}
+.course .txt--big {
+	font-size: 24px;
+}
+.course .price {
+	color: #be0000;
+	font-size: 36px;
+}
+.youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+/* info */
+#info {
+	background: url(../img/bg_info.jpg) right bottom no-repeat,
+		url(../img/bg_white.jpg) center 0 repeat;
+}
+#info .inner {
+	height: 1110px;
+}
+#info h2 {
+	position: absolute;
+	top: 325px;
+	left: 600px;
+}
+#info .txt {
+	position: absolute;
+	top: 125px;
+	right: 0;
+	width: 440px;
+}
+#info .photo {
+	position: absolute;
+	top: 125px;
+	left: -250px;
+}
+#info .photo02 {
+	position: absolute;
+	top: 325px;
+	right: -100px;
+}
+#info .photo03 {
+	position: absolute;
+	top: 685px;
+	left: 0;
+}
+/* contact */
+#contact {
+	background: url(../img/bg_contact.jpg) 0 0 repeat;
+	padding: 50px 0;
+}
+#contact h2 {
+	margin-bottom: 30px;
+}
+#contact .tel02 {
+	float: left;
+	margin-left: 120px;
+}
+#contact .site02 {
+	float: right;
+	margin-right: 120px;
+}
+#contact .site02 a {
+	transition: opacity .3s;
+}
+#contact .site02 a:hover {
+	opacity: .5;
+}
+
+/* footer
+----------------------------- */
+#footer {
+	background: url(../img/bg_footer.jpg) center center no-repeat;
+	color: white;
+	height: 400px;
+}
+@media screen and (min-width: 1500px) {
+	#footer {
+		background-size: cover;
+	}
+}
+#footer h2 {
+	margin-top: 60px;
+}
+#footer .hamo {
+	margin-top: 15px;
+}
+#footer h3 {
+	font-weight: bold;
+	margin-top: 20px;
+}
+#footer h3,
+#footer address {
+	font-size: 14px;
+}
+#copyright {
+	font-size: 10px;
+	letter-spacing: .2em;
+	margin-top: 20px;
+}
+/* share */
+.social-share {
+	display: table;
+	margin: 10px auto 0;
+	width: 280px;
+	height: 21px;
+}
+.social-share li {
+	list-style: none;
+	display: table-cell;
+	vertical-align: top;
+}
+.social-share iframe {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.btn--facebook {
+	padding-right: 20px;
+	width: 100px !important;
+}
+.btn--twitter {
+	padding-top: 10px;
+	padding-right: 20px;
+	width: 80px !important;
+}
+.btn--gplusone {
+	padding-top: 10px;
+	width: 60px !important;
+}
+/* pagetop */
+#pagetop {
+	position: fixed;
+	bottom: 0;
+	right:0;
+}
