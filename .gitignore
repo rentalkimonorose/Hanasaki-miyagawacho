@@ -1,0 +1,8 @@
+.ftp_config.json
+.DS_Store
+.git_backup/
+
+# Exclude WordPress uploads & image backups
+**/wp-content/uploads/
+**/wp-content/ew-backup/
+**/wp-content/ew_backup/

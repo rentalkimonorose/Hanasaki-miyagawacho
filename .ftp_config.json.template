@@ -1,0 +1,8 @@
+{
+  "host": "s58.coreserver.jp",
+  "username": "your_ftp_username",
+  "password": "your_ftp_password",
+  "port": 21,
+  "remote_path": "/public_html/miyagawacho-hanasaki.com",
+  "use_tls": false
+}
